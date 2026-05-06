@@ -26,7 +26,8 @@ export const Cake = () => {
   };
   return (
     <div id="cake">
-      {error !== "" ? <h2>Cakes: {error}</h2> : <h2>Cakes: {cakes}</h2>}
+      <h2>Cakes: {cakes}</h2>
+      {error && <h2>Cakes: {error}</h2>}
       <form>
         <label>Set number of Cakes to buy</label> <br />
         <input
